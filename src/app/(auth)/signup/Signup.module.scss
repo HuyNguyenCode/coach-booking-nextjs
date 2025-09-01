@@ -1,0 +1,282 @@
+.header-auth-container {
+  background-color: transparent;
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  .header-auth-content {
+    display: flex;
+    justify-content: space-between;
+
+    .left-content {
+      height: 100%;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .header-logo {
+        width: 81%;
+        height: 95%;
+        background: url("https://dewey.tailorbrands.com/production/brand_version_mockup_image/527/8458617527_c3f4e149-410b-4bb0-997b-16c8313bc0ef.png?cb=1688898940")
+          center center no-repeat;
+        cursor: pointer;
+        background-size: 150px;
+      }
+    }
+
+    .center-content {
+      height: 100%;
+      flex: 1;
+    }
+
+    .right-content {
+      height: 100%;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .header-text {
+        a {
+          color: black;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.signup-wrapper {
+  padding: 50px;
+  padding-bottom: 165px;
+  .signup-container {
+    .signup-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .signup-board {
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 0 var(--box-shadow-color);
+        margin: auto;
+        width: 700px;
+        .signup-select {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .signup-header {
+            padding: 50px 0;
+            text-align: center;
+            font-family: SuisseWorks;
+            font-weight: 700;
+            font-size: 40px;
+          }
+          .signup-option {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            .signup-student,
+            .signup-coach {
+              position: relative;
+              width: 50%;
+              border-radius: 10px;
+              padding: 20px;
+              cursor: pointer;
+              border: 2px solid rgba(0, 0, 0, 0.08);
+              i {
+                font-size: 25px;
+              }
+              .selected-circle {
+                position: absolute;
+                top: 10px;
+                bottom: 0px;
+                right: 10px;
+                border-radius: 100px;
+                width: 20px;
+                height: 20px;
+              }
+              h2 {
+                padding: 20px 0;
+              }
+            }
+            .signup-student.active,
+            .signup-coach.active {
+              border: 2px solid #000;
+              transition: all 0.5s ease;
+            }
+
+            .signup-student {
+              margin-left: 90px;
+            }
+            .signup-coach {
+              margin-right: 90px;
+            }
+          }
+
+          .signupBtn {
+            margin: 50px auto;
+            padding: 10px;
+            border-radius: 50px;
+            width: 250px;
+            cursor: not-allowed;
+          }
+
+          .signupBtn.active {
+            cursor: pointer;
+            background-color: #000;
+            color: white;
+            font-weight: bold;
+          }
+
+          .loginText {
+            padding-bottom: 30px;
+            a {
+              font-weight: bold;
+            }
+          }
+        }
+        .signup-select.disable {
+          display: none;
+        }
+        .signup-coach-section {
+          display: none;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 30px;
+          .signup-header {
+            font-size: 30px;
+            padding-top: 40px;
+            padding-bottom: 20px;
+          }
+          .appleBtn,
+          .fbBtn,
+          .ggBtn {
+            position: relative;
+            width: 100%;
+            padding: 11px 0;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            i {
+              padding-right: 10px;
+            }
+          }
+
+          .ggBtn {
+            background-color: #4285f4;
+            color: white;
+            .google-icon {
+              position: absolute;
+              background-color: white;
+              border: 1px solid #4285f4;
+              border-radius: 100px;
+              top: 0;
+              bottom: 0;
+              width: 6%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          .appleBtn {
+            background-color: white;
+            border: 1px solid black;
+          }
+
+          .fbBtn {
+            background-color: #4285f4;
+            margin-bottom: 10px;
+            color: white;
+            .google-icon {
+              position: absolute;
+              background-color: white;
+              border: 1px solid #4285f4;
+              border-radius: 100px;
+              top: 0;
+              bottom: 0;
+              width: 6%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          span {
+            position: relative;
+            margin: 20px 0;
+          }
+          span::before,
+          span::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 10px;
+            border-bottom: 1px solid #d5e0d5;
+            width: 2080%;
+          }
+
+          span::after {
+            left: 20px;
+          }
+          span::before {
+            right: 20px;
+          }
+          .input-area {
+            width: 100%;
+            .input-name {
+              display: flex;
+              gap: 30px;
+              .form-group {
+                width: 50%;
+                margin-bottom: 0;
+              }
+            }
+            .form-check {
+              display: flex;
+              padding: 10px;
+              .form-check-label {
+                padding-left: 10px;
+                color: #001e00;
+                font-family: Neue Montreal;
+                font-size: 15px;
+                letter-spacing: 0.6px;
+                line-height: 18px;
+              }
+              input {
+                font-size: 10px;
+              }
+            }
+            .form-group {
+              .form-control {
+                width: 100%;
+                padding: 18px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+              }
+            }
+
+            button {
+              margin: 20px 0;
+              background-color: black;
+              border-radius: 50px;
+              width: 100%;
+            }
+          }
+          .loginText {
+            font-size: 15px;
+            padding-bottom: 30px;
+          }
+        }
+        .signup-coach-section.active {
+          display: flex;
+        }
+      }
+    }
+  }
+}

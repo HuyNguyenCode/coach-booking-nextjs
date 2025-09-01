@@ -1,0 +1,29 @@
+.header-auth-container {
+  background-color: transparent;
+  height: 60px;
+  padding: 0 20px;
+  width: 100%;
+  .header-auth-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+    .main-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-logo {
+        width: 15%;
+        height: 95%;
+        background: url("https://dewey.tailorbrands.com/production/brand_version_mockup_image/527/8458617527_c3f4e149-410b-4bb0-997b-16c8313bc0ef.png?cb=1688898940")
+          center center no-repeat;
+        cursor: pointer;
+        background-size: 150px;
+      }
+    }
+  }
+}

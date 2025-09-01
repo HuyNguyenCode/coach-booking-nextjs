@@ -1,0 +1,106 @@
+.header-container {
+    background-color: transparent;
+    // border: solid red 1px;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .left-content {
+        // border: solid orange 1px;
+        height: 100%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .submenu {
+            padding-left: 20px;
+            color: grey;
+            font-size: 30px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .header-logo {
+            width: 81%;
+            height: 95%;
+            background: url('https://dewey.tailorbrands.com/production/brand_version_mockup_image/527/8458617527_c3f4e149-410b-4bb0-997b-16c8313bc0ef.png?cb=1688898940')
+                center center no-repeat;
+            cursor: pointer;
+        }
+    }
+
+    .center-content {
+        // border: solid blue 1px;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .search-are {
+            margin-left: 50px;
+            margin-right: 20px;
+            border: solid black 1px;
+            border-radius: 30px;
+            height: 70%;
+            width: 60%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .search-icon {
+                padding-left: 10px;
+                color: black;
+                font-size: 20px;
+            }
+
+            .search-input {
+                height: 100%;
+                width: 90%;
+                border-radius: 20px;
+                padding-left: 15px;
+                font-size: 15px;
+            }
+        }
+        .child-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // border: solid red 1px;
+            color: black;
+            height: 80%;
+            flex: 1;
+        }
+    }
+
+    .right-content {
+        // border: solid yellowgreen 1px;
+        height: 100%;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btnLogin {
+            font-weight: 600;
+            background-color: white;
+            border: 2px solid black;
+            height: 65%;
+            width: 35%;
+            margin: 10px;
+        }
+
+        .btnSignup {
+            font-weight: 600;
+            background-color: black;
+            color: white;
+            width: 35%;
+            height: 65%;
+        }
+    }
+}

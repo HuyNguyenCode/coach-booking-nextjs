@@ -1,0 +1,613 @@
+//Banner section
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .left-content {
+    // padding-top: 40px;
+    padding: 40px 0 55px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 180px;
+    // align-items: center;
+    .head-title {
+      color: rgb(31, 31, 31);
+      font-size: 70px;
+      font-weight: 600;
+      font-family: "Source Sans Pro", Arial, sans-serif;
+      letter-spacing: -0.2px;
+      margin: 0;
+    }
+
+    .sub-title {
+      font-size: 18px;
+      letter-spacing: -0.1px;
+      line-height: 28px;
+      margin: 24px 0px;
+      color: #1f1f1f;
+      letter-spacing: -0.1px;
+      margin: 24px 0;
+    }
+
+    .homepage-button {
+      display: flex;
+      width: 100%;
+      height: 72px;
+
+      .btnJoin {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.6px solid white;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: -0.1px;
+        line-height: 28px;
+        margin: 0px 10px 0px 0px;
+        padding: 12px 32px;
+        height: 100%;
+        width: 40%;
+      }
+
+      .btnTry {
+        padding: 12px 32px;
+        flex: 1;
+        background-color: transparent;
+        border: 3px solid black;
+        border-radius: 4px;
+        height: 100%;
+        font-size: 18px;
+        color: black;
+        font-weight: 700;
+        line-height: 24px;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.03);
+        }
+      }
+    }
+  }
+
+  .right-content {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .image-background {
+      // background: url('../assets/images/background_img.jpg');
+      background: url("../../../public/assets/img/Coaches/background_img.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 115%;
+    }
+  }
+}
+
+//Brand section
+.homepage-brand-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .homepage-brand-title {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    line-height: 28px;
+    margin-bottom: 48px;
+    margin-top: 0;
+    a {
+      color: #0056d2;
+      display: inline;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+
+      &:hover {
+        color: #0056d2;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .homepage-brand {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    .homepage-brand-logo {
+      margin: 0 10px 10px;
+      .brand-href {
+        height: 0;
+        img {
+          margin: 0 10px 30px;
+        }
+      }
+    }
+  }
+}
+
+//Coach section
+.coach-slider {
+  .coach-card {
+    max-width: 35.5rem;
+    min-width: 17.3rem;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+
+    .coach-infor {
+      min-height: 18.5rem;
+      margin-top: 50px;
+      .coach-img {
+        position: absolute;
+        top: -50px;
+        bottom: 0px;
+        right: 0px;
+        left: 125px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+        object-fit: contain;
+        background-color: white;
+      }
+      .coach-name {
+        margin-top: 10px;
+      }
+
+      .coach-specialized {
+        .specialized-des {
+          font-size: 1.5rem;
+          height: 7.5rem;
+          line-height: 1.8rem;
+          overflow: hidden;
+          @supports (-webkit-line-clamp: 4) {
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+          }
+        }
+      }
+      .bookBtn {
+        background-color: black;
+        color: white;
+        padding: 12px 32px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: -0.1px;
+        line-height: 28px;
+      }
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    top: 220px;
+  }
+  .slick-prev {
+    right: 10px;
+  }
+
+  .slick-next {
+    right: -12px;
+  }
+}
+
+//Courses section
+.course-content {
+  margin-top: 50px;
+  .courses-slider {
+    .slick-next,
+    .slick-prev {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background-color: #1c1d1f;
+      z-index: 1;
+      top: 65px;
+
+      &:hover {
+        background-color: #3e4143;
+      }
+    }
+    .slick-prev {
+      right: 25px;
+    }
+
+    .slick-next {
+      right: -12px;
+    }
+    .course-item {
+      max-width: 23.5rem;
+      min-width: 17.3rem;
+      cursor: pointer;
+      .course-img {
+        width: 95%;
+        height: 100%;
+        border: 1px solid rgb(209, 215, 220);
+      }
+      .course-title {
+        margin: 8px 0 4px 0;
+      }
+      .course-coach {
+        margin-bottom: 4px;
+      }
+      .course-rate {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        span {
+          color: #b4690e;
+          font-size: 1.4rem;
+          margin-right: 0.5rem;
+        }
+
+        .comment-rate {
+          color: #6a6f73;
+          margin-left: 0.4rem;
+        }
+      }
+      .course-price {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+
+        .price {
+          line-height: 1;
+          padding: 0.4rem 0;
+          margin-right: 0.8rem;
+          margin-right: 4px;
+        }
+        .price-origin {
+          text-decoration: line-through;
+          color: #6a6f73;
+          line-height: 1;
+          padding: 0.4rem 0;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+//Category section
+.category-option {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  .category-card {
+    position: relative;
+    height: 210px;
+    width: 20%;
+    border-radius: 30px;
+    cursor: pointer;
+    .category-select {
+      .category-img {
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+        background: center center no-repeat;
+        cursor: pointer;
+        background-size: cover;
+      }
+      cursor: pointer;
+      img {
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .category-title {
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      line-height: 19.2px;
+      font-size: 20px;
+    }
+
+    .category-card_content {
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgba(0, 0, 0, 0.1), #83a7b6);
+      border-radius: 30px;
+      opacity: 0;
+      width: 100%;
+
+      .category-card_heading {
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+        text-align: center;
+      }
+      .category-card_text {
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+        height: 7.5rem;
+        line-height: 1.8rem;
+        overflow: hidden;
+        @supports (-webkit-line-clamp: 3) {
+          text-overflow: response;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      .btn-category {
+        border-radius: 50%;
+        margin-bottom: 10px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    &:hover .category-card_content {
+      transition: 0.5s ease;
+      opacity: 1;
+    }
+  }
+}
+
+//Testiomonial section
+
+.testimonial-content {
+  margin-top: 30px;
+}
+.testimonial-item {
+  max-width: 36rem;
+  // min-height: 30.5rem;
+  // min-width: 17.3rem;
+  padding: 24px;
+  border: 1px solid rgb(209, 215, 220);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+
+  .content-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70%;
+    border-bottom: 1px solid #d1d7dc;
+    min-height: 210px;
+    .testimonials-img {
+      width: 17.78px;
+      height: 100%;
+      margin-bottom: 16px;
+    }
+    .testimonials-text {
+      font-weight: 300;
+      span {
+        font-weight: 700;
+      }
+    }
+    .testimonials-user {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      .user-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 30px;
+        background-color: rgb(28, 29, 31);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+      }
+      .user-name {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .content-down {
+    .testimonials-course {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding-top: 24px;
+      .coures-title {
+        color: #e16b5a;
+        margin-left: 4px;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.testimonials-slider {
+  .slick-next {
+    right: -12px;
+  }
+}
+
+//Discover section
+.homepage-discover-content {
+  display: flex;
+  padding: 96px 0;
+  margin-top: 100px;
+
+  .left-discover-content {
+    max-width: 600px; // giới hạn độ rộng để chữ không quá dài
+    padding: 0 80px; // gọn hơn 100px
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    .homepage-discover-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #1c1d1f; // màu đậm giống Udemy
+    }
+
+    .homepage-discover-subtitle {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+      color: #3c3c3c; // màu chữ phụ nhạt hơn
+    }
+
+    .btnDiscover {
+      height: 52px;
+      padding: 0 32px;
+      background-color: #0056d2;
+      color: white;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.25s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #0041a8;
+        transform: translateY(-2px); // hover nổi lên nhẹ
+      }
+    }
+  }
+
+  .right-discover-content {
+    display: grid;
+    -ms-grid-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-gap: 1px;
+    grid-gap: 1px;
+    width: 50%;
+    background-color: #e5e7e8;
+    .homepage-discover-brand-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+      background-color: #f5f7f8;
+      img {
+        max-width: 80%;
+        max-height: 50px;
+      }
+    }
+  }
+}
+
+//BecomeCoach section
+.homepage-becomecoach-content {
+  height: 500px;
+  display: flex;
+  .left-becomecoach-content {
+    // width: 50%;
+    width: 40%;
+    height: 90%;
+    .image-becomecoach {
+      margin-left: auto;
+      // background: url('../assets/images/becomecoach_img.jpg');
+      // background: url('../../assets/images//Coaches/becomecoach_img.jpg');
+      background: url("../../../public/assets/img/Coaches/becomecoach_img.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  .right-becomecoach-content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px; // gọn hơn 150px cho cân đối
+    gap: 24px; // đồng bộ spacing hiện đại
+    max-width: 650px; // giới hạn chiều rộng text cho dễ đọc
+
+    .homepage-becomecoach-title {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #1c1d1f; // đậm giống Udemy/Coursera
+    }
+
+    .homepage-becomecoach-subtitle {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      color: #3c3c3c;
+      margin-bottom: 16px;
+    }
+
+    .btnBecomecoach {
+      height: 52px;
+      padding: 0 32px;
+      background-color: #0056d2;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.4rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      width: fit-content; // thay vì fix 60%, nhìn đẹp hơn
+      transition: background-color 0.25s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #0041a8;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+//reset slick slider css
