@@ -1,0 +1,84 @@
+.preiew-img-container{
+    .lable-upload {
+        padding: 5px;
+        border-radius: 3px;
+        background-color: #ddd;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .preview-img {
+        height: 50px;
+        width: 100%;
+        border: 1px solid red;
+        background: center center no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+.btn-edit {
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: orange;
+
+    &:hover {
+        background-color: transparent;
+        color: orange;
+    }
+}
+
+.btn-add-des,
+.btn-delete {
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(235, 15, 15);
+
+    &:hover {
+        background-color: transparent;
+        color: rgb(235, 15, 15);
+    }
+}
+
+.btn-add-des {
+    color: blue;
+    &:hover {
+        background-color: transparent;
+        color: blue;
+    }
+}

@@ -1,0 +1,26 @@
+// .modal-dialog {
+//     max-width: 1200px;
+//     margin: 1.75rem auto;
+// }
+
+.more-infor {
+    textarea {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+}
+
+.modal-add-des {
+    .input-area {
+        flex-direction: column;
+        .input-inline {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 10px;
+            .form-group {
+                width: 100%;
+            }
+        }
+    }
+}

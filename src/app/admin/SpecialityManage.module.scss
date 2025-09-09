@@ -1,0 +1,25 @@
+.specialty-wrapper {
+    .container {
+        max-width: 1400px;
+        .speciality-content {
+            display: flex;
+            flex-direction: column;
+            .up-content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 50px;
+                .form-group {
+                    width: 50%;
+                }
+                .upload-img {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            .down-content {
+            }
+        }
+    }
+}

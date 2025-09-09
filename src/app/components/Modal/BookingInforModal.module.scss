@@ -1,0 +1,86 @@
+.booking-infor-modal {
+    &.modal-dialog {
+        @media (min-width: 766px) {
+            max-width: 850px;
+        }
+    }
+
+    .modal-content {
+        .modal-booking-content {
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            .left-content {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                margin-right: 20px;
+
+                .coach-avatar {
+                    height: 150px;
+                    width: 150px;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    margin-bottom: 10px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                .coach-name {
+                    display: flex;
+                }
+                .coach-description-part {
+                    display: flex;
+                    position: relative;
+
+                    .coach-description {
+                        text-align: start;
+                    }
+                    .coach-description.hide {
+                        font-size: 1.5rem;
+                        height: 5.5rem;
+                        line-height: 1.8rem;
+                        overflow: hidden;
+                        @supports (-webkit-line-clamp: 3) {
+                            text-overflow: response;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                    .btnToggle-text {
+                        background-color: white;
+                        color: black;
+                        display: flex;
+                        height: 12px;
+                        font-size: 10px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                    .btnToggle-text.hide {
+                        display: none;
+                    }
+                }
+                .coach-price {
+                    justify-self: flex-start;
+                }
+            }
+            .right-content {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .input-area {
+                    width: 100%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}

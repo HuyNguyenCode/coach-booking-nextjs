@@ -1,0 +1,130 @@
+.specialty-wrapper {
+  background: #f5f6fa; // nền xám nhạt cho toàn trang
+  min-height: 100vh;
+  padding: 40px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .header-title {
+      margin-top: 40px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1c1d1f;
+      text-align: center;
+    }
+
+    .specialty-des {
+      color: #4a4a4a;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      margin: 16px auto 32px;
+      font-size: 18px;
+      font-weight: 400;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .specialty-name {
+      margin-bottom: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #222;
+    }
+
+    .specialty-content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      min-height: 220px;
+      background: #fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .left-content {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .up-content {
+          display: flex;
+          align-items: center;
+
+          .coach-avatar {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid #f0f0f0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          }
+
+          .coach-infor {
+            flex: 1;
+            margin-left: 15px;
+
+            .coach-name-postion {
+              font-size: 18px;
+              font-weight: 600;
+              color: #1c1d1f;
+              margin-bottom: 6px;
+            }
+
+            .coach-extra {
+              font-size: 14px;
+              color: #666;
+            }
+          }
+        }
+
+        .down-content {
+          margin-top: 12px;
+          padding-left: 8px;
+
+          .extra-infor {
+            cursor: pointer;
+            font-weight: 600;
+            color: #2563eb;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: underline;
+              color: #1d4ed8;
+            }
+          }
+        }
+      }
+
+      .right-content {
+        width: 50%;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .specialty-content::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 75%;
+      top: 50%;
+      background: #e5e7eb;
+      transform: translateY(-50%);
+      left: 50%;
+    }
+  }
+}
